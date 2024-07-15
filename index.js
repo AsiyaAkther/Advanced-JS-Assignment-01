@@ -36,6 +36,20 @@ const mergedArray = [...array1, ...array2, ...array3]
 console.log(mergedArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
+// 5. Write an object person using the object literal syntax extensions. The object should have properties name and age, and a method greet that returns a greeting message.
+const name = "John";
+const age = 30;
+const Person = {
+    name,
+    age,
+    greet: function(){
+      console.log("Hi, I'm " + this.name + " and I'm " + this.age + " years old");
+    }
+};
+// Your code here
+console.log(Person.greet()); // "Hi, I'm John and I'm 30 years old."
+
+
 // 6. Write a for...of loop to iterate over the following array and print each element to the console.
 const fruits = ["apple", "banana", "cherry"];
 for(let i of fruits){
@@ -51,7 +65,7 @@ const message = `My name is ${name} and I am ${age} years old.`;
 console.log(message); // "My name is Alice and I am 25 years old."
 
 
-// 8. You have an array of objects representing students and their grades. Use a for...of loop to iterate over the array and print each student's name and grade.
+// // 8. You have an array of objects representing students and their grades. Use a for...of loop to iterate over the array and print each student's name and grade.
 const students = [
     { name: "Alice", grade: 90 },
     { name: "Bob", grade: 85 },
